@@ -47,10 +47,10 @@ module.exports = {//Exportamos
   
             await eco.updateOne({ user: usuario, guild: servidor }, { money: quitarM });
     
-            let a = new eco({
-              user,
-              guild,
-              money,
+            let a = new bank({
+              user: usuario,
+              guild: servidor,
+              money: cantidad,
             });
             await a.save();
               return message.reply({//Retornamos con el embed diciendo que todo salio bien
