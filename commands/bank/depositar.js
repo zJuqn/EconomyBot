@@ -47,7 +47,7 @@ module.exports = {//Exportamos
   
             await eco.updateOne({ user: usuario, guild: servidor }, { money: quitarM });
     
-            let a = new this.db({
+            let a = new eco({
               user,
               guild,
               money,
